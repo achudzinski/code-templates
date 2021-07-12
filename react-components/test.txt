@@ -1,0 +1,13 @@
+import React from 'react';
+import { render } from '@testing-library/react';
+import { ${NAME} } from "./${NAME}";
+
+describe('${NAME} component', () => {
+   it('should render', () => {
+       const { getByTestId } = render(<${NAME} />);
+       const root = getByTestId('container');
+       expect(root).toBeInTheDocument();
+   })
+});
+
+
